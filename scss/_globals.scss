@@ -1,0 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:500,700|Roboto:400,300italic);
+
+@mixin body-font-light {
+    font-family: 'Roboto', Helvetica, Verdana sans-serif;
+    font-style: normal;
+    font-weight: 400;  
+}
+
+@mixin body-font-light-italic {
+    font-family: 'Roboto', Helvetica, Verdana sans-serif;
+    font-style: italic;
+    font-weight: 300;  
+}
+
+@mixin body-font-light-bold {
+    font-family: 'Ubuntu', Helvetica, Verdana sans-serif;
+    font-style: normal;
+    font-weight: 500;  
+}
+
+@mixin headline-font {
+    font-family: 'Ubuntu', Helvetica, Verdana sans-serif;
+    font-style: bold;
+    font-weight: 700;  
+}
+
+$background-color: #fff;
+$base-font-size: 19px;
+$color: #165ccb;
+$line-height: 1;
+
+@function em($px, $base: $base-font-size) { 
+    @return ($px / $base) * 1em; }
